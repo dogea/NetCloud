@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="CSI Request" max_length="40" name="x_209043_netcloudc_csi_request" sizeclass="11" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Justification" max_length="40" name="u_justification" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="KPI Metrics" max_length="40" name="u_kpimetrics" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="small" label="Scope" max_length="40" name="u_scope" type="string">
+            <choice>
+                <element label="Small" sequence="0" value="small"/>
+                <element label="Medium" sequence="1" value="medium"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="short" label="Timeframe" max_length="40" name="u_timeframe" type="string">
+            <choice>
+                <element label="Short" sequence="0" value="short"/>
+                <element label="Small" sequence="1" value="small"/>
+                <element label="Medium" sequence="2" value="medium"/>
+            </choice>
+        </element>
+    </element>
+</database>
